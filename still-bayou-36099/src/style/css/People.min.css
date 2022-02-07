@@ -1,0 +1,41 @@
+.salary-input{width:40%;display:inline-block}
+form span{margin:0}
+.filter-data-col{text-align:left}
+.people-page-marginer{margin-top:40px;margin-bottom:40px}
+
+.resource-seeker-list{
+  margin: auto;
+  align-items: center;
+}
+.seeker-card:hover{
+
+    box-shadow: 2px 2px 18px 6px rgba(0,0,0,0.3);
+}
+
+.resource-provider-list{
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+.provider-card:hover{
+  box-shadow: 2px 2px 18px 6px rgba(0,0,0,0.3);
+}
+
+.card-deck .card{
+  margin:auto;
+}
+@media screen and (max-width: 576px) {
+    .card-deck {
+      display: flex;
+      flex-flow: row wrap;
+    }
+}
+
+#people-resource-seeker{background-color:white}
+#people-resource-seeker h2{font-variant:small-caps}
+#people-resource-provider{background-color:#fcffde}
+#people-resource-provider h2{font-variant:small-caps}
+#people-all-resource-seeker{background-color:#fcffde}
+#people-all-resource-seeker h2{font-variant:small-caps}
+#people-all-resource-provider{background-color:#ddf0c9}
+#people-all-resource-provider h2{font-variant:small-caps}

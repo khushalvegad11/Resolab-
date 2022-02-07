@@ -1,0 +1,26 @@
+.login {
+    padding: 20px 20px;
+    background-color: #ffffff;
+    max-width: 350px;
+    z-index: 2;
+    border-radius: 5px;
+}
+
+.signup2 {
+    padding: 20px 20px;
+    background-color: #ffffff;
+    z-index: 2;
+    border-radius: 5px;
+}
+
+.login_d1 {
+    
+    height: 601px;
+  
+    padding-top:50px;
+    
+}
+
+.login_b1 {
+    width: 150px;
+}

@@ -1,0 +1,23 @@
+.details-form {
+    padding: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    max-width: 400px;
+    background-color:white;
+
+
+
+}
+.details_d1 {
+    background-color:white;
+    height: auto;
+
+}
+.signUp-form{
+  margin:10px;
+}
+
+.details_b1 {
+    margin-top:3%;
+    width: 200px;
+}

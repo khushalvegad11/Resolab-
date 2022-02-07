@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+  font-family:  inherit;
+}
+
+/* Create three columns of equal width */
+.columns {
+  margin: auto;
+  justify-content: center;
+  padding: 2px;
+  align-items: center;
+}
+.row{
+  padding-left: 2vh;
+  padding-right: 2vh;
+  margin:auto;
+  align-items: center;
+}
+.Button{
+  float:right;
+}
+.priceTag{
+  float:left;
+  margin-left: 0;
+}
+
+/* Style the list */
+.price {
+  list-style-type: none;
+  border: 1px solid #eee;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+/* Add shadows on hover */
+.price:hover {
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+/* Pricing header */
+.price .header {
+  background-color: #0099ff;
+  color: white;
+  font-size: 20px;
+}
+
+/* List items */
+.price li {
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Grey list item */
+.price .grey {
+  background-color: #eee;
+  font-size: 20px;
+}
+
+/* The "Sign Up" button */
+.button {
+  background-color: #eee;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: right;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Change the width of the three columns to 100%
+(to stack horizontally on small screens) */
+@media only screen and (max-width: 600px) {
+  .columns {
+    width: 75%;
+    margin: auto;
+    margin-top: 20px;
+  }
+}

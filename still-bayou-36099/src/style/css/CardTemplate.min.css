@@ -1,0 +1,17 @@
+.profile-pic{width:50%}
+.card-template-deck{border:solid 3px #d9c9a0;background-color:#fff2cf;text-align:center}
+.highlights{height:200px;width:275.33px}
+.fill{display:flex;justify-content:center;align-items:center;overflow:hidden img;overflow-flex-shrink:0;overflow-min-width:100%;overflow-min-height:100%}
+.shadow-card{
+  transition: transform 0.5s ease;
+}
+.shadow-card:hover{
+  box-shadow: 2px 2px 18px 6px rgba(0,0,0,0.2);
+  
+}
+.expand-on-hover{
+    transition: transform 0.5s ease;
+}
+.expand-on-hover:hover{
+  transform:scale(1.05);
+}

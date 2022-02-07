@@ -1,0 +1,43 @@
+.footer{
+  border-top: 2px solid grey;
+}
+.dark_d1 {
+    background:#9AD9EA;
+    color:black;
+    text-align: left;
+    padding: 0.5% 5%;
+}
+#heading-footer{
+
+
+  margin-top:20px;
+
+  padding: 0.5% 5%;
+  padding: auto;
+
+}
+.dark_l1
+{
+    text-align: left;
+    height: auto;
+    margin-top:0px;
+    padding-top: 0px;
+}
+.dark_l1 a{
+  color:black;
+}
+.dark_d2{
+  margin-top:10px;
+}
+.dark_r1 {
+
+}
+svg{
+    height: 1em;
+    width: 3em;
+}
+@media screen and (min-width: 576px) {
+    #heading-footer {
+      margin: auto;
+    }
+}

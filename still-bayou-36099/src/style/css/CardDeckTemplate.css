@@ -1,0 +1,52 @@
+
+.owl-stage{
+  padding-right: 5%;
+    margin: auto;
+    width: 360000px !important
+}
+.owl-item{
+    width: 230px;
+}
+
+
+.owlitem{
+  opacity:0.8;
+  width:230px;
+  margin: auto;
+  transition:.4s ease all;
+  margin:auto;
+  transform:scale(0.8);
+}
+@media(max-width:1000px){
+  .owlitem{margin:auto; transform:scale(.85)}
+}
+.center .owlitem{
+  opacity:1;
+  transform:scale(0.9);
+  box-shadow: 2px 2px 18px 6px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+
+.owl-carousel .owl-stage {
+  display: flex;
+  align-items: center;
+}
+.owl-stage-outer{
+    max-height: 400px;
+}
+.owl-theme{
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.aligncenter{
+  display: flex;
+  font-family: sans-serif;
+
+  flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,113 @@
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  align-self: center;
+}
+
+
+.ul{
+  text-decoration: underline;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 100px;
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+
+.App {
+  text-align: center;
+  font-family: inherit;
+  background-image: url("../../images/allbg.jpg");
+}
+
+
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+  margin: 0 0 0 0;
+}
+
+.col-lg
+{margin-top: 20px;
+margin-bottom: 20px;}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 10s linear;
+  }
+}
+.logo{
+  margin: -60px 0 -60px 0px;
+}
+
+.App-header {
+  font-weight: bold;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color:blue !important;
+}
+
+.nav1{
+  float:right;
+  margin-right: 0;
+  color: red;
+}
+.App-link{
+  font-size: 15px;
+  font-weight: bold;
+  color:blue;
+}
+
+.menu-items{
+  font-size: 16px;
+  font-weight:bolder;
+  color:red
+}
+.navbar-light .navbar-nav .nav-link {
+    color: green;
+    font-weight: 900;
+
+}
+.navbar-light .navbar-nav .nav-link .hover {
+    text-decoration: underline;
+
+}
+
+@media screen and (min-width: 992px) {
+    .menu-items {
+        margin-right: 50px;
+        color:red;
+    }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+

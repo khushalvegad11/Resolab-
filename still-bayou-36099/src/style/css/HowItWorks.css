@@ -1,0 +1,71 @@
+.htw_d1 {
+    width: 100%;
+    padding: 10vh;
+    margin:auto;
+    background-color: #004466;
+    background-repeat: no-repeat;
+    height: 200px;
+    background-position: right bottom 180%;
+
+}
+.htw_d1_1 {
+    max-width: 700px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    color: white;
+
+}
+.text_left {
+    text-align: right;
+    padding-bottom:25px;
+
+}
+.text_right {
+    text-align: left;
+
+
+}
+
+@media screen and (min-width: 992px) {
+
+    .htw_content{
+      display: flex
+    }
+}
+
+
+.step_icon{
+
+
+}
+.content{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin:auto;
+}
+.cardTitle{
+  font-weight: bold;
+}
+
+
+.htw_btn {
+    color: rgba(255,255,255,0.99);
+    background: #518f2d;
+    box-shadow: 20px 37px 102px rgba(0, 0, 0, 0.098);
+    font-weight: 600;
+    text-transform: uppercase;
+    transition-duration:0.5s;
+
+}
+
+.htw_btn:hover{
+    color:#518f2d;
+    background: rgba(255,255,255,0.99)
+}
+.raw {
+    padding-top: 70px !important;
+    padding-bottom: 70px !important
+}

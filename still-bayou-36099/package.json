@@ -1,0 +1,70 @@
+{
+  "name": "resolab-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.29",
+    "@sendgrid/mail": "^7.4.2",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
+    "bootbox": "^5.5.2",
+    "bootstrap": "^5.0.1",
+    "bootstrap-icons": "^1.5.0",
+    "emailjs-com": "^2.6.4",
+    "firebase": "^7.15.3",
+    "https": "^1.0.0",
+    "netlify-cli": "^8.6.15",
+    "react": "^16.14.0",
+    "react-bootbox": "^1.1.1",
+    "react-bootstrap": "^1.0.1",
+    "react-dom": "^16.14.0",
+    "react-icons": "^3.10.0",
+    "react-images-upload": "^1.2.8",
+    "react-lazy-load-image-component": "^1.5.0",
+    "react-moment": "^1.1.1",
+    "react-native-login-screen": "^1.0.0",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^3.4.3",
+    "react-select": "^3.2.0",
+    "react-switch": "^5.0.1",
+    "reactstrap": "^9.0.0",
+    "yup": "^0.29.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "axios": "^0.19.2",
+    "gulp": "^4.0.2",
+    "gulp-changed": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-uglify": "^3.0.2",
+    "react-bootstrap": "^1.0.1",
+    "react-loader-spinner": "^3.1.14",
+    "react-owl-carousel": "^2.3.1",
+    "react-router-dom": "^5.2.0",
+    "universal-cookie": "^4.0.3"
+  }
+}

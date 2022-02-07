@@ -1,0 +1,24 @@
+.profile-pic{
+	width: 50%;
+}
+.card-template-deck{
+	border: solid 3px #d9c9a0;
+	background-color: #fff2cf;
+    text-align: center;
+}
+.highlights{
+	height: 200px;
+	width: 275.33px;
+}
+.fill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+
+    img{
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
+	}	
+}

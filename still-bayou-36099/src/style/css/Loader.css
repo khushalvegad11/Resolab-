@@ -1,0 +1,10 @@
+.loadersvg svg{
+    height: 6em;
+    width: 8em;
+}
+.loaderdiv{
+    line-height: 200px;
+}
+.loaderdiv svg{
+    vertical-align: middle;
+}

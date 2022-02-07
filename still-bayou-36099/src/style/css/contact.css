@@ -1,0 +1,107 @@
+.contact1 {
+    text-align: left;
+    padding: 20px 30px;
+    max-width: 600px;
+   
+}
+
+.contact1_1 {
+    margin: 0 0 2rem;
+    box-shadow: 0 5px 43px #e1e4e5;
+    border-radius: 10px;
+    padding: 20px 30px;
+    
+    background-color:white;
+}
+.contact2 {
+    box-shadow: 10px 5px 43px 10px #e1e4e5;
+    padding: 20px 50px;
+    margin: 40px 0 50px;
+    max-width: 500px;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 17px;
+}
+.contact_c1 {
+    padding-bottom: 5%;
+}
+.contact_d2 {
+   
+    background-image: url("../../images/particle.svg");
+    background-position: -50%;
+    background-repeat: no-repeat;
+}
+.contact_d1 {
+    width: 100%;
+    padding-top: 10%;
+    background-color: #c042ff;
+    background-image: url("../../images/shape2.svg");
+    background-repeat: no-repeat;
+    height: 317px;
+    background-position: bottom right;
+}
+
+.contact_d1_1 {
+    max-width: 600px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    color: #CCCC00;
+}
+
+.contact_d1 h1 {
+    font-size: 50px;
+}
+
+.contact_r1 {
+    margin: 3% 2%;
+}
+
+.contact_col1 {
+    background-color: white;
+    margin-bottom: 10%;
+    margin-left: 1.5%;
+    margin-right: 1%;
+    padding: 2% 0% 1% 0%;
+    margin-top: 3%;
+}
+
+.contact_i1 {
+    width: 20%;
+    height: 35%;
+}
+
+.location {
+    width: 100%;
+    background-color: #faf9fc;
+    padding: 50px 10px;
+}
+
+.location_d1 {
+    width: 100%;
+    padding: 50px 50px;
+    box-shadow: 0 5px 43px #e1e4e5;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: white;
+    max-width: 1050px;
+    border-radius: 10px;
+}
+.shape {
+    position: absolute;
+    right: -5rem;
+    bottom: -10rem;
+    z-index: -1;
+}
+.section-particle {
+    position: absolute;
+    height: 50em;
+    width: 50em;
+    top: -200em;
+    left: -25em;
+    z-index: -3;
+}
+.top-0 {
+    top: 0 !important;
+}

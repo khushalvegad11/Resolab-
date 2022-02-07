@@ -1,0 +1,44 @@
+.resource-seeker-list{
+  margin:auto;
+  align-items: center;
+  justify-content: center;
+}
+.seeker-card:hover{
+
+    box-shadow: 2px 2px 18px 6px rgba(0,0,0,0.3);
+}
+
+.service-provider-list{
+  margin:20px;
+  margin-bottom: 40px;
+  padding:auto;
+  float:left;
+}
+.provider-card:hover{
+  box-shadow: 2px 2px 18px 6px rgba(0,0,0,0.3);
+}
+.service_pics{
+  width:500px;
+  height: auto;
+  margin: auto;
+  margin-bottom: 25px;
+  padding: auto;
+}
+.enlarge-on-hover{
+  transition: transform 0.5s ease;
+}
+.enlarge-on-hover:hover{
+  transform:scale(1.15);
+}
+
+.card-deck .card{
+  margin:auto;
+}
+@media screen and (max-width: 768px) {
+    .card-deck {
+    }
+    .service_pics{
+      width:80%;
+    }
+
+}

@@ -1,0 +1,27 @@
+.seeker-fill{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.seeker-card-img{
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%
+}
+.seeker-card-template-deck{
+	border: solid 3px #d9c9a0;
+    width: 380px;
+    height: 310px;
+	background-color: #fff2cf;
+    text-align: center;
+    overflow: hidden;
+
+    .seeker-info{
+        margin: auto auto;
+    }
+}
+.seeker-card-resetter{
+    margin:0;
+    padding: 0;
+}

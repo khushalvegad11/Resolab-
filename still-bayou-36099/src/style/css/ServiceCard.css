@@ -1,0 +1,36 @@
+.img-parent {
+    position: relative;
+    max-height: 450px;
+}
+.profile-pic {
+    position: relative;
+    /* top:6em; */
+    width: 50%;
+    min-width:150px;
+}
+
+.card-template-deck {
+    border: solid 3px #d9c9a0;
+    background-color: #fff2cf;
+    text-align: center;
+}
+
+.highlights {
+    height: 200px;
+    width: 275.33px;
+}
+
+.fill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden 
+}
+.fill img {
+    flex-shrink: 0;
+}
+.ctext{
+    padding:5px;
+    font-size: 100%;
+}

@@ -1,0 +1,47 @@
+.seeker-pic{width:50%}
+.seeker-card-template-deck{border:solid 3px #d9c9a0;background-color:#fff2cf;text-align:center}
+
+
+.abcde{
+  width:95%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+}
+.abcde:hover{
+  border:2px solid #ccf2ff;
+  background-color:#e8f7fc;
+}
+
+
+.service-card-container{
+  width:85%;
+  height:250px;
+  padding-top: 10px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+}
+.service-card-container:hover{
+  border:2px solid #ccf2ff;
+  background-color:#e8f7fc;
+}
+
+.service-card-image{
+  width:300px;
+  height: 220px;
+}
+@media screen and (max-width: 992px){
+  .service-card-container{
+    width:100%;
+    height: 500px;
+  }
+  .service-card-image{
+
+    width:300px;
+    height: 220px;
+    max-height: 280px;
+
+  }
+}
+.service-card-content{
+  font-size: 16px;
+}

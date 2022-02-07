@@ -1,0 +1,42 @@
+$odd-color: #fcffde;
+$even-color: #ddf0c9;
+.salary-input{
+	width: 40%;
+	display: inline-block;
+}
+form{
+	span{
+		margin: 0;
+	}
+}
+.filter-data-col{
+	text-align: left;
+}
+.people-page-marginer{
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+#people-resource-seeker{
+	background-color: $odd-color;
+	h2{
+		font-variant: small-caps;
+	}
+}
+#people-resource-provider{
+	background-color: $odd-color;
+	h2{
+		font-variant: small-caps;
+	}
+}
+#people-all-resource-seeker{
+	background-color: $odd-color;
+	h2{
+		font-variant: small-caps;
+	}
+}
+#people-all-resource-provider{
+	background-color: $even-color;
+	h2{
+		font-variant: small-caps;
+	}
+}
