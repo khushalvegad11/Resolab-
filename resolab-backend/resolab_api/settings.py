@@ -31,7 +31,7 @@ SECRET_KEY = '8j6m7n+b%0udm_tymgr!tp6=f_0&k(n%%)=n%wz06=cv8*7!ax'
 # SECURITY WARNING: don't run with debug turned on in production!
 
 #DEBUG = config('DEBUG', default=True, cast=bool)
-DEBUG = False
+DEBUG = True
 ALLOWED_HOSTS = ['*']
 
 
@@ -100,7 +100,8 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
         }
 }
-DATABASES['default'].update(dj_database_url.config(conn_max_age=0))
+# DATABASES['default'].update(dj_database_url.config(conn_max_age=0))
+DATABASES['default'] = dj_database_url.parse('postgresql://postgres:D869YxTNbjHr3Aq7e7Sq22M33@resolabs-pg-db.cdse71lzchns.ap-south-1.rds.amazonaws.com:5432/duv6mnpf2205d')
 # print(BASE_DIR)
 print("\nDATABASES >> ", DATABASES ,"\n")
 print("\nDB URL >> ", dj_database_url,"\n")

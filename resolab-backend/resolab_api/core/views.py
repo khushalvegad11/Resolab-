@@ -20,6 +20,7 @@ from django.utils.functional import SimpleLazyObject,LazyObject
 from django.http import HttpResponse
 from resolab_api.verification.models import *
 from datetime import datetime , timedelta
+from .helpers.customPagination import CustomPagination
 
 # Create your views here.
 
@@ -354,27 +355,36 @@ class ResourceSeekerCardPeopleCreateView(generics.CreateAPIView):
 class ResourceSeekerCardPeopleListView(generics.ListAPIView):
     # permission_classes = [IsAuthenticated]
     serializer_class = ResourceSeekerCardPeopleListSerializer
-    queryset = ResourceSeekerCardPeople.objects.all().filter(industry="Skilling").order_by('-id')[:10]
+    queryset = ResourceSeekerCardPeople.objects.all().filter(industry="Skilling").order_by('-id')
+    pagination_class = CustomPagination
 
 class ResourceSeekerCardPeopleListViewMf(generics.ListAPIView):
     # permission_classes = [IsAuthenticated]
     serializer_class = ResourceSeekerCardPeopleListSerializer
-    queryset = ResourceSeekerCardPeople.objects.all().filter(industry="Microfinance").order_by('-id')[:10]
+    queryset = ResourceSeekerCardPeople.objects.all().filter(industry="Microfinance").order_by('-id')
+    pagination_class = CustomPagination
+    
 
 class ResourceSeekerCardPeopleListViewAll(generics.ListAPIView):
     # permission_classes = [IsAuthenticated]
     serializer_class = ResourceSeekerCardPeopleListSerializer
     queryset = ResourceSeekerCardPeople.objects.all().filter(industry="Skilling").order_by('-id')
+    pagination_class = CustomPagination
+    
 
 class ResourceSeekerCardPeopleListViewAllMf(generics.ListAPIView):
     # permission_classes = [IsAuthenticated]
     serializer_class = ResourceSeekerCardPeopleListSerializer
     queryset = ResourceSeekerCardPeople.objects.all().filter(industry="Microfinance").order_by('-id')
+    pagination_class = CustomPagination
+    
 
 class ResourceSeekerCardPeopleListViewAllBoth(generics.ListAPIView):
     # permission_classes = [IsAuthenticated]
     serializer_class = ResourceSeekerCardPeopleListSerializer
     queryset = ResourceSeekerCardPeople.objects.all().order_by('-id')
+    pagination_class = CustomPagination
+    
 
 class ResourceSeekerCardPeopleRetrieveUpdateDeleteView(generics.RetrieveUpdateDestroyAPIView):
     permission_classes = [IsAuthenticated]
@@ -389,27 +399,32 @@ class ResourceProviderCardPeopleCreateView(generics.CreateAPIView):
 class ResourceProviderCardPeopleListView(generics.ListAPIView):
     # permission_classes = [IsAuthenticated]
     serializer_class = ResourceProviderCardPeopleListSerializer
-    queryset = ResourceProviderCardPeople.objects.all().filter(industry="Skilling").order_by('-id')[:10]
+    queryset = ResourceProviderCardPeople.objects.all().filter(industry="Skilling").order_by('-id')
+    pagination_class = CustomPagination
 
 class ResourceProviderCardPeopleListViewMf(generics.ListAPIView):
     # permission_classes = [IsAuthenticated]
     serializer_class = ResourceProviderCardPeopleListSerializer
-    queryset = ResourceProviderCardPeople.objects.all().filter(industry="Microfinance").order_by('-id')[:10]
+    queryset = ResourceProviderCardPeople.objects.all().filter(industry="Microfinance").order_by('-id')
+    pagination_class = CustomPagination
 
 class ResourceProviderCardPeopleListViewAll(generics.ListAPIView):
     # permission_classes = [IsAuthenticated]
     serializer_class = ResourceProviderCardPeopleListSerializer
     queryset = ResourceProviderCardPeople.objects.all().filter(industry="Skilling").order_by('-id')
+    pagination_class = CustomPagination
 
 class ResourceProviderCardPeopleListViewAllMf(generics.ListAPIView):
     # permission_classes = [IsAuthenticated]
     serializer_class = ResourceProviderCardPeopleListSerializer
     queryset = ResourceProviderCardPeople.objects.all().filter(industry="Microfinance").order_by('-id')
+    pagination_class = CustomPagination
 
 class ResourceProviderCardPeopleListViewAllBoth(generics.ListAPIView):
     # permission_classes = [IsAuthenticated]
     serializer_class = ResourceProviderCardPeopleListSerializer
     queryset = ResourceProviderCardPeople.objects.all().order_by('-id')
+    pagination_class = CustomPagination
 
 class ResourceProviderCardPeopleRetrieveUpdateDeleteView(generics.RetrieveUpdateDestroyAPIView):
     permission_classes = [IsAuthenticated]
@@ -432,6 +447,7 @@ class ResourceSeekerCardAdvisoryAlliedServicesListView(generics.ListAPIView):
     #permission_classes = [IsAuthenticated]
     serializer_class = ResourceSeekerCardAdvisoryAlliedServicesListSerializer
     queryset = ResourceSeekerCardAdvisoryAlliedServices.objects.all().filter(industry="Skilling")
+    pagination_class = CustomPagination
 
 class ResourceSeekerCardAdvisoryAlliedServicesRetrieveUpdateDeleteView(generics.RetrieveUpdateDestroyAPIView):
     permission_classes = [IsAuthenticated]
@@ -447,6 +463,7 @@ class ResourceProviderCardAdvisoryAlliedServicesListView(generics.ListAPIView):
     #permission_classes = [IsAuthenticated]
     serializer_class = ResourceProviderCardAdvisoryAlliedServicesListSerializer
     queryset = ResourceProviderCardAdvisoryAlliedServices.objects.all().filter(industry="Skilling")
+    pagination_class = CustomPagination
 
 class ResourceProviderCardAdvisoryAlliedServicesRetrieveUpdateDeleteView(generics.RetrieveUpdateDestroyAPIView):
     permission_classes = [IsAuthenticated]
@@ -463,6 +480,7 @@ class ResourceSeekerCardInfraListView(generics.ListAPIView):
     #permission_classes = [IsAuthenticated]
     serializer_class = ResourceSeekerCardInfraListSerializer
     queryset = ResourceSeekerCardInfra.objects.all().filter(industry="Skilling")
+    pagination_class = CustomPagination
 
 class ResourceSeekerCardInfraRetrieveUpdateDeleteView(generics.RetrieveUpdateDestroyAPIView):
     permission_classes = [IsAuthenticated]
@@ -493,6 +511,7 @@ class ResourceProviderCardInfraListView(generics.ListAPIView):
     #permission_classes = [IsAuthenticated]
     serializer_class = ResourceProviderCardInfraListSerializer
     queryset = ResourceProviderCardInfra.objects.all().filter(industry="Skilling")
+    pagination_class = CustomPagination
 
 class ResourceProviderCardInfraRetrieveUpdateDeleteView(generics.RetrieveUpdateDestroyAPIView):
     permission_classes = [IsAuthenticated]
