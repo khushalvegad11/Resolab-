@@ -19,7 +19,7 @@ function SeekerMfPagination() {
 
     useEffect(() => {
         const getCards = async () => {
-            const res = await fetch(`http://localhost:8000/core/list_seekers_people_all_mf/?page=1&cards=${cardsTotal}`)
+            const res = await fetch(`https://www.resolabindia.com/api/core/list_seekers_people_all_mf/?page=1&cards=${cardsTotal}`)
             const jsonData = await res.json()
             const data = jsonData.results
             const total = jsonData.count
@@ -31,7 +31,7 @@ function SeekerMfPagination() {
     }, [])
 
     const fetchCards = async (currentPage) => {
-        const res = await fetch(`http://localhost:8000/core/list_seekers_people_all_mf/?page=${currentPage}&cards=${cardsTotal}`)
+        const res = await fetch(`https://www.resolabindia.com/api/core/list_seekers_people_all_mf/?page=${currentPage}&cards=${cardsTotal}`)
 
         const jsonData = await res.json()
         const data = jsonData.results

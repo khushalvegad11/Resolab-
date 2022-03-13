@@ -44,7 +44,7 @@ class Available extends Component{
         if(this.props.match.params.industry==="Microfinance")
         path="https://www.resolabindia.com/api/core/list_providers_people_all_mf/"
         else
-        path= "http://localhost:8000/api/core/list_providers_people_all/"
+        path= "https://www.resolabindia.com/api/core/list_providers_people_all/"
         axios.get(path)
             .then((response) => {
             this.setState({
