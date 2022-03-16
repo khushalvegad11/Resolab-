@@ -1,0 +1,20 @@
+version: "3.8"
+
+services:
+  resolab-django:
+    build: .
+    command: python3 manage.py runserver 0.0.0.0:8000
+    environment:
+      - SERVICE_ACCOUNT_DECRYPT_KEY=${SERVICE_ACCOUNT_DECRYPT_KEY}
+      - S3_BUCKET=${S3_BUCKET}
+      - RAZORPAY_API_KEY=${RAZORPAY_API_KEY}
+      - RAZORPAY_API_SECRET=${RAZORPAY_API_SECRET}
+      - RAZORPAY_TEST_API_KEY=${RAZORPAY_TEST_API_KEY}
+      - RAZORPAY_TEST_API_SECRET=${RAZORPAY_TEST_API_SECRET}
+      - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
+      - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
+      - DATABASE_URL=${DATABASE_URL}
+
+    ports:
+      - "8000:8000"
+
