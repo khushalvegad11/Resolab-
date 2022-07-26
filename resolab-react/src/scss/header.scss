@@ -18,11 +18,12 @@ $secondary: #00d14f;
 }
 
 .ftco-navbar-light {
-	background: transparent!important;
-	position: absolute;
+	background: #f8f9fa!important;
+	position: relative;
 	left: 0;
 	right: 0;
-	z-index: 3;
+	z-index: 2;
+	padding: 5px 0;
 	@include media-breakpoint-down(md) {
 		background: $black!important;
 		position: relative;

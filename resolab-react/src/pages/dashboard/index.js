@@ -17,7 +17,7 @@ export const Dashboard = () => {
   return (
     <>
       <Header />
-      <div>this is dashboard</div>
+      <div className="main">this is dashboard</div>
       <Footer />
       {loginModalStatus ? (
         <div className="overlay fade show" onClick={handleOverlay}></div>
