@@ -1,13 +1,13 @@
 import React from "react";
-import { Header } from "./components/header";
-import { Footer } from "./components/footer";
+import store from "./redux/store";
+import { Provider } from "react-redux";
+import ResoLabRoutes from "./routes/Routes";
 
 function App() {
   return (
-    <>
-      <Header />
-      <Footer />
-    </>
+    <Provider store={store}>
+      <ResoLabRoutes />
+    </Provider>
   );
 }
 

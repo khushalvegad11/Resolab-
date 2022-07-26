@@ -2,7 +2,7 @@ import React from "react";
 
 export const Footer = () => {
     return (
-        <footer className="ftco-footer ftco-bg-dark ftco-section">
+        <footer className="ftco-footer ftco-white ftco-section">
             <div className="container">
                 <div className="row mb-5">
                     <div className="col-md">
@@ -16,32 +16,6 @@ export const Footer = () => {
                                 <li className="ftco-animate"><a href="#"><span className="icon-linkedin"></span></a></li>
                                 <li className="ftco-animate"><a href="#"><span className="icon-envelope"></span></a></li>
                                 <li className="ftco-animate"><a href="#"><span className="icon-whatsapp"></span></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div className="col-md">
-                        <div className="ftco-footer-widget mb-4">
-                            <h2 className="ftco-heading-2">Employers</h2>
-                            <ul className="list-unstyled">
-                                <li><a href="#" className="pb-1 d-block">Browse Candidates</a></li>
-                                <li><a href="#" className="pb-1 d-block">Post a Job</a></li>
-                                <li><a href="#" className="pb-1 d-block">Employer Listing</a></li>
-                                <li><a href="#" className="pb-1 d-block">Resume Page</a></li>
-                                <li><a href="#" className="pb-1 d-block">Dashboard</a></li>
-                                <li><a href="#" className="pb-1 d-block">Job Packages</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div className="col-md">
-                        <div className="ftco-footer-widget mb-4 ml-md-4">
-                            <h2 className="ftco-heading-2">Candidate</h2>
-                            <ul className="list-unstyled">
-                                <li><a href="#" className="pb-1 d-block">Browse Jobs</a></li>
-                                <li><a href="#" className="pb-1 d-block">Submit Resume</a></li>
-                                <li><a href="#" className="pb-1 d-block">Dashboard</a></li>
-                                <li><a href="#" className="pb-1 d-block">Browse Categories</a></li>
-                                <li><a href="#" className="pb-1 d-block">My Bookmarks</a></li>
-                                <li><a href="#" className="pb-1 d-block">Candidate Listing</a></li>
                             </ul>
                         </div>
                     </div>

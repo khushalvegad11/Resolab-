@@ -1,129 +1,91 @@
-.footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 20%;
-    height: 35px;
-    background-color: $cbl-bk-1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+$white: #fff;
+$black: #000000;
+$primary: #206dfb;
+$secondary: #00d14f;
 
-    .button {
-        font-size: 12px;
-        font-weight: 500;
-        margin: 0 5px;
-        cursor: pointer;
-        color: $cbl-gr-3;
-        border-color: $cbl-gr-0;
-        background-color: $cbl-bk-5;
-        &:hover {
-            background-color: $cbl-bk-4;
-        }
-
-        // &.btn-cancel {
-        //     background-color: $cbl-del-0;
-        // }
-
-        // &.btn-save {
-        //     background-color: $cbl-green-0;
-        // }
-    }
-
-    .error-message {
-        color: red;
-    }
-}
 .ftco-footer {
-    font-size: 16px;
-    background: #fff;
-    padding: 3em 0;
-    color: rgba(0, 0, 0, 0.5);
-  }
-  
-  .ftco-footer .ftco-footer-logo {
-    text-transform: uppercase;
-    letter-spacing: .1em;
-  }
-  
-  .ftco-footer .ftco-footer-widget h2 {
-    font-weight: normal;
-    color: rgba(0, 0, 0, 0.7);
-    margin-bottom: 20px;
-    font-size: 18px;
-    font-weight: 400;
-  }
-  
-  .ftco-footer .ftco-footer-widget ul li a {
-    color: rgba(0, 0, 0, 0.4);
-  }
-  
-  .ftco-footer .ftco-footer-widget ul li a span {
-    color: rgba(0, 0, 0, 0.5);
-  }
-  
-  .ftco-footer .ftco-footer-widget .btn-primary {
-    background: #fff !important;
-    border: 2px solid #fff !important;
-  }
-  
-  .ftco-footer .ftco-footer-widget .btn-primary:hover {
-    background: #fff;
-    border: 2px solid #fff !important;
-  }
-  
-  .ftco-footer p {
-    color: rgba(0, 0, 0, 0.5);
-  }
-  
-  .ftco-footer a {
-    color: rgba(0, 0, 0, 0.5);
-  }
-  
-  .ftco-footer a:hover {
-    color: #206dfb;
-  }
-  
-  .ftco-footer-social li {
-    list-style: none;
-    margin: 0 10px 0 0;
-    display: inline-block;
-  }
-  
-  .ftco-footer-social li a {
-    height: 40px;
-    width: 40px;
-    display: block;
-    background: rgba(0, 0, 0, 0.05);
-    border-radius: 50%;
-    position: relative;
-    color: #206dfb;
-  }
-  
-  .ftco-footer-social li a span {
-    position: absolute;
-    font-size: 20px;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    color: #206dfb !important;
-  }
-  
-  .ftco-footer-social li a:hover {
-    color: #fff;
-  }
-  
-  .footer-small-nav>li {
-    display: inline-block;
-  }
-  
-  .footer-small-nav>li a {
-    margin: 0 10px 10px 0;
-  }
-  
-  .footer-small-nav>li a:hover,
-  .footer-small-nav>li a:focus {
-    color: #206dfb;
-  }
+	font-size: 16px;
+	background: $white;
+	padding: 6em 0;
+	color: rgba(0,0,0,.5);
+	.ftco-footer-logo {
+		text-transform: uppercase;
+		letter-spacing: .1em;
+	}
+	.ftco-footer-widget {
+		h2 {
+			font-weight: normal;
+			color: rgba(0,0,0,.7);
+			margin-bottom: 20px;
+			font-size: 18px;
+			font-weight: 400;
+		}
+		ul{
+			li{
+				a{
+					color: rgba(0,0,0,.4);
+					span{
+						color: rgba(0,0,0, .5);
+					}
+				}
+			}
+		}
+		.btn-primary{
+			background: $white !important;
+			border: 2px solid $white !important;
+			&:hover{
+				background: $white;
+				border: 2px solid $white !important;
+			}
+		}
+	}
+	p {
+		color: rgba(0,0,0, .5);
+	}
+	a {
+		color: rgba(0,0,0, .5);
+		&:hover {
+			color: $primary;
+		}
+	}
+}
+
+
+.ftco-footer-social {
+	li {
+		list-style: none;
+		margin: 0 10px 0 0;
+		display: inline-block;
+		a {
+			height: 40px;
+			width: 40px;
+			display: block;
+			background: rgba(0,0,0,.05);
+			border-radius: 50%;
+			position: relative;
+			color: $primary;
+			span {
+				position: absolute;
+				font-size: 20px;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				color: $primary !important;
+			}
+			&:hover {
+				color: $white;
+			}
+		}
+	}
+}
+.footer-small-nav {
+	> li {
+		display: inline-block;
+		a {
+			margin: 0 10px 10px 0;
+			&:hover, &:focus {
+				color: $primary;
+			}
+		}
+	}
+}
