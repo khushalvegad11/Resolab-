@@ -3,7 +3,6 @@ $black: #000000;
 $primary: #206dfb;
 $secondary: #00d14f;
 
-@import 'bootstrap/bootstrap';
 
 .site-logo {
   float: left;
@@ -53,6 +52,7 @@ $secondary: #00d14f;
 				padding-right: 20px;
 				color: $primary;
 				font-weight: 400;
+				cursor: pointer;
 				&:hover {
 					color: $secondary;
 				}
