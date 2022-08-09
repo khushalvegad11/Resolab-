@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import Modal from "@mui/material/Modal";
 import Tab from "@mui/material/Tab";
 import { TabContext, TabList, TabPanel } from "@mui/lab";
@@ -8,13 +8,16 @@ export const LoginSignupModal = ({
   handleModalClick,
   activeIndex,
 }) => {
-  const [value, setValue] = React.useState(activeIndex);
+  const [value, setValue] = useState(activeIndex);
+  const [userType, setUserType] = useState("");
 
   useEffect(() => {
     setValue(activeIndex);
+    setUserType("");
   }, [activeIndex]);
 
   const handleChange = (event, newValue) => {
+    setUserType("");
     setValue(newValue);
   };
   return (
@@ -23,6 +26,7 @@ export const LoginSignupModal = ({
       onClose={() => handleModalClick(false)}
       aria-labelledby="modal-modal-title"
       aria-describedby="modal-modal-description"
+      className="modal-open"
     >
       <div className="modal-dialog modal-dialog-centered">
         <div className="modal-content">
@@ -116,107 +120,127 @@ export const LoginSignupModal = ({
                 {/* Sign up */}
                 <TabPanel value="2">
                   <div>
-                    <div>
-                      <a href="#" className="select-signup-button">
-                        <span className="icon-user mr-2"></span>
-                        <span>I'm looking for a job</span>
-                      </a>
-                      <a href="#" className="select-signup-button">
-                        <span className="icon-building mr-2"></span>
-                        <span>I want to hire tech talent</span>
-                      </a>
-                    </div>
-
-                    <div className="login-box">
-                      <a href="#" className="social-button" id="google-connect">
-                        <span>Connect with Google</span>
-                      </a>
-                      <a
-                        href="#"
-                        className="social-button"
-                        id="linkedin-connect"
-                      >
-                        <span>Connect with LinkedIn</span>
-                      </a>
-                      <a
-                        href="#"
-                        className="social-button"
-                        id="facebook-connect"
-                      >
-                        <span>Connect with Facebook</span>
-                      </a>
-                    </div>
-                    <div>
-                      <hr className="hr-text" data-content="OR" />
-                    </div>
-                    <div className="d-flex flex-column text-left">
-                      <form>
-                        <div className="form-group d-flex">
-                          <div className="col-6 pl-0">
-                            <label>Full Name</label>
-                            <input
-                              type="text"
-                              className="form-control"
-                              id="fullName"
-                              name="fullName"
-                              placeholder="Full Name"
-                            />
-                          </div>
-                          <div className="col-6 pr-0">
-                            <label>Last Name</label>
-                            <input
-                              type="text"
-                              className="form-control"
-                              id="lastName"
-                              name="lastName"
-                              placeholder="Last Name"
-                            />
-                          </div>
-                        </div>
-                        <div className="form-group">
-                          <label>Company Name</label>
-                          <input
-                            type="text"
-                            className="form-control"
-                            id="companyName"
-                            placeholder="Company Name"
-                          />
-                        </div>
-                        <div className="form-group">
-                          <label>Email</label>
-                          <input
-                            type="email"
-                            className="form-control"
-                            id="email1"
-                            placeholder="Your email address"
-                          />
-                        </div>
-                        <div className="form-group">
-                          <label>Password</label>
-                          <input
-                            type="password"
-                            className="form-control"
-                            id="password1"
-                            placeholder="Your password"
-                          />
-                        </div>
-                        <div className="form-group">
-                          <label>Where did you hear about ResoLab?</label>
-                          <select name="" id="" className="form-control">
-                            <option value="">Choose an option</option>
-                            <option value="">LinkedIn</option>
-                            <option value="">Facebook</option>
-                            <option value="">Twitter</option>
-                          </select>
-                        </div>
-                        <button
-                          type="button"
-                          className="btn btn-info btn-block btn-round"
+                    {!userType ? (
+                      <div>
+                        <a
+                          href="#"
+                          className="select-signup-button"
+                          onClick={() => setUserType("aspirant")}
                         >
-                          Sign Up
-                        </button>
-                      </form>
-                    </div>
+                          <span className="icon-user mr-2"></span>
+                          <span>I'm looking for a job</span>
+                        </a>
+                        <a
+                          href="#"
+                          className="select-signup-button"
+                          onClick={() => setUserType("company")}
+                        >
+                          <span className="icon-building mr-2"></span>
+                          <span>I want to hire tech talent</span>
+                        </a>
+                      </div>
+                    ) : null}
+
+                    {userType ? (
+                      <>
+                        <div className="login-box">
+                          <a
+                            href="#"
+                            className="social-button"
+                            id="google-connect"
+                          >
+                            <span>Connect with Google</span>
+                          </a>
+                          <a
+                            href="#"
+                            className="social-button"
+                            id="linkedin-connect"
+                          >
+                            <span>Connect with LinkedIn</span>
+                          </a>
+                          <a
+                            href="#"
+                            className="social-button"
+                            id="facebook-connect"
+                          >
+                            <span>Connect with Facebook</span>
+                          </a>
+                        </div>
+                        <div>
+                          <hr className="hr-text" data-content="OR" />
+                        </div>
+                        <div className="d-flex flex-column text-left">
+                          <form>
+                            <div className="form-group d-flex">
+                              <div className="col-6 pl-0">
+                                <label>Full Name</label>
+                                <input
+                                  type="text"
+                                  className="form-control"
+                                  id="fullName"
+                                  name="fullName"
+                                  placeholder="Full Name"
+                                />
+                              </div>
+                              <div className="col-6 pr-0">
+                                <label>Last Name</label>
+                                <input
+                                  type="text"
+                                  className="form-control"
+                                  id="lastName"
+                                  name="lastName"
+                                  placeholder="Last Name"
+                                />
+                              </div>
+                            </div>
+                            {userType && userType === "company" ? (
+                              <div className="form-group">
+                                <label>Company Name</label>
+                                <input
+                                  type="text"
+                                  className="form-control"
+                                  id="companyName"
+                                  placeholder="Company Name"
+                                />
+                              </div>
+                            ) : null}
+                            <div className="form-group">
+                              <label>Email</label>
+                              <input
+                                type="email"
+                                className="form-control"
+                                id="email1"
+                                placeholder="Your email address"
+                              />
+                            </div>
+                            <div className="form-group">
+                              <label>Password</label>
+                              <input
+                                type="password"
+                                className="form-control"
+                                id="password1"
+                                placeholder="Your password"
+                              />
+                            </div>
+                            <div className="form-group">
+                              <label>Where did you hear about ResoLab?</label>
+                              <select name="" id="" className="form-control">
+                                <option value="">Choose an option</option>
+                                <option value="">LinkedIn</option>
+                                <option value="">Facebook</option>
+                                <option value="">Twitter</option>
+                              </select>
+                            </div>
+                            <button
+                              type="button"
+                              className="btn btn-info btn-block btn-round"
+                            >
+                              Sign Up
+                            </button>
+                          </form>
+                        </div>
+                      </>
+                    ) : null}
                   </div>
                 </TabPanel>
               </div>

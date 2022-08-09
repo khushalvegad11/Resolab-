@@ -28,8 +28,7 @@ const renderComponent = (props) => {
 };
 
 export const ProtectedRoute = (props) => {
-  const isAuthorized =
-    props.location.pathname == "/" || props.location.pathname == "/home";
+  const isAuthorized = true;
   const { component, render, ...restProps } = props;
 
   return (
